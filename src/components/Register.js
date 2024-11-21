@@ -49,8 +49,8 @@ export default function Register() {
 
   return (
     <div className="auth-container">
-      <h2>DEV@Deakin Register</h2>
-      <button onClick={handleGoogleSignIn} className="google-btn"><img src={image} alt="Google Logo" className="google-logo" />Google Register</button>
+      <h2>DEV@Deakin SignUp</h2>
+      <button onClick={handleGoogleSignIn} className="google-btn"><img src={image} alt="Google Logo" className="google-logo" />Google SignUp</button>
       <h3>OR</h3>
       <form onSubmit={handleRegister}>
         <input
@@ -74,7 +74,7 @@ export default function Register() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit" className="register-btn">Register</button>
+        <button type="submit" className="register-btn">SignUp</button>
       </form>
       <p className="down">Already have an account? <Link to="/login">Login</Link></p>
     </div>

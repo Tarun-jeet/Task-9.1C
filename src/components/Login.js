@@ -51,8 +51,9 @@ export default function Login({ setIsAuthenticated }) {
         <button type="submit" className="submit-btn">Login</button>
       </form>
       <p className="down">
-        Don't have an account? <span onClick={() => navigate('/register')} className="link">Register</span>
+        Don't have an account? <span onClick={() => navigate('/register')} className="link">SignUp</span>
       </p>
     </div>
+    
   );
 }

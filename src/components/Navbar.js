@@ -12,7 +12,7 @@ export default function Navbar({ title, one, two, place, isAuthenticated, handle
       signOut(auth)
         .then(() => {
           handleLogout(); 
-          navigate('/login'); 
+          navigate('/'); 
         })
         .catch((error) => {
           alert("Error logging out: " + error.message);

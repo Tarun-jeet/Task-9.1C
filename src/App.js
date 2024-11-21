@@ -28,6 +28,7 @@ function App() {
 
   const handleLogout = () => {
     setIsAuthenticated(false);
+    
   };
 
   return (
@@ -35,7 +36,7 @@ function App() {
       <Navbar
         title="DEV@Deakin"
         two="POST"
-        one={isAuthenticated ? "LOG OUT" : "LOG IN"}
+        one={isAuthenticated ? "LOG OUT"  : "LOG IN"}
         place="Search..."
         isAuthenticated={isAuthenticated}
         handleLogout={handleLogout}
@@ -53,7 +54,8 @@ function App() {
             </>
           }
         />
-        <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
+        <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated}  />} />
+        
         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
